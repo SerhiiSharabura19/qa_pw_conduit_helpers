@@ -14,10 +14,10 @@ let article;
 test.beforeEach(async ({ page }) => {
   homePage = new HomePage(page);
   createArticlePage = new CreateArticlePage(page);
-  viewArticlePage = new ViewArticlePage(page);
+  viewArticlePage = new ViewArticlePage(page); 
   article = generateNewArticleData();
   const user = generateNewUserData();
-
+  
   await signUpUser(page, user);
 });
 
